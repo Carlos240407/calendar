@@ -40,7 +40,13 @@
 .container .up-content .change i{
     font-size: 2.3rem;
     cursor: pointer;
+    transition: .1s;
 }
+.container .up-content .change i:active{
+    transform: scale(0.90);
+    color: #17af17;
+}
+
 #dias-mes{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -60,4 +66,38 @@
     inset -8px 8px 9px #f2f2f2;
     font-weight: 800;
     color: #ca655a;
+}
+.days{
+    color: #e0e0e0;
+    margin: 20px auto;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+.active{
+    color: mediumslateblue !important;
+}
+
+.days:nth-last-of-type(7){
+    background-color: #860707;
+}
+.days:nth-last-of-type(6){
+    background-color: #076886;
+}
+.days:nth-last-of-type(5){
+    background-color: #710786;
+}
+.days:nth-last-of-type(4){
+    background-color: #078638;
+}
+.days:nth-last-of-type(3){
+    background-color: #862f07;
+}
+.days:nth-last-of-type(2){
+    background-color: #86076a;
+}
+.days:nth-last-of-type(1){
+    background-color: #502d2d;
 }
